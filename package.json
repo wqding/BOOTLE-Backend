@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "tunnel": "ssh -R 80:localhost:5000 localhost.run"
   },
   "keywords": [],
   "author": "",
