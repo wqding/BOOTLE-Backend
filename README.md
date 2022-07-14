@@ -2,9 +2,6 @@
 
 ```sh
 $ npm install
-```
-
-```sh
 $ npm start
 # development
 $ npm run dev
