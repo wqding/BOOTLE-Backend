@@ -1,5 +1,6 @@
 ### Usage
 
+```sh
 $ npm install
 ```
 
