@@ -16,6 +16,13 @@ const UserSchema = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now
+  },
+
+  settings: {
+    display_mode: {
+      type: Number,
+      default: 3
+    },
   }
 });
 
