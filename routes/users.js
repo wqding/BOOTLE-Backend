@@ -37,7 +37,7 @@ router.post('/register', (req, res) => {
           newUser
             .save()
             .then(user => {
-              res.status(200).json({error: 'User created'}).send();
+              res.status(200).json(user);
             })
             .catch(err => {
               console.log(err)
@@ -65,8 +65,7 @@ router.post('/login', (req, res, next) => {
       if (err) {
         return res.status(400).send();
       }
-
-      return res.status(200).send();
+      return res.status(200).json(user);
     });
   })(req, res, next);
 });
