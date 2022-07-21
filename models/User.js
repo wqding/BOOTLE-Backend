@@ -17,7 +17,29 @@ const UserSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
-
+  stats: {
+    volume: [{
+      timestamp: {
+        type: Date,
+        default: Date.now
+      },
+      value: Number
+    }],
+    temperature: [{
+      timestamp: {
+        type: Date,
+        default: Date.now
+      },
+      value: Number
+    }],
+    battery: [{
+      timestamp: {
+        type: Date,
+        default: Date.now
+      },
+      value: Number
+    }]
+  },
   settings: {
     display_mode: {
       type: Number,
