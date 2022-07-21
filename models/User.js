@@ -41,7 +41,7 @@ const UserSchema = new mongoose.Schema({
     }]
   },
   settings: {
-    display_mode: {
+    displayMode: {
       type: Number,
       default: 3
     },

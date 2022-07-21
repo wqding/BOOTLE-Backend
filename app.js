@@ -20,6 +20,7 @@ mongoose
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
+mongoose.set('useFindAndModify', false);
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
 
