@@ -15,4 +15,4 @@ Copy the link into the BASE_URL variable in the .env of BOOTLE-frontend
 
 ### Connect to MongoDb
 
-Open "config/keys.js" and add your MongoDB URI, local or Atlas
+Create "config/keys.js" and add your MongoDB URI, local or Atlas
